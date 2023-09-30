@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="-42dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Look at My GUI:"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="21dp"
+            android:text="Click Here" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button4"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="18dp"
+            app:srcCompat="@drawable/flag" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton3"
+            android:layout_marginStart="51dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/imageButton3"
+            android:text="Check This Out!" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="34dp"
+            android:layout_toEndOf="@+id/button4"
+            android:text="Switch On/Off" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton3"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Type Here"
+            android:inputType="text" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
